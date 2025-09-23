@@ -1,0 +1,13 @@
+name: This is first CD
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  create_file_on_host:
+    runs-on: self-hosted
+    steps: 
+      - name: Generate File
+        run: echo "Jeerawat" >> /home/jeerawat/testgit.txt
+    
