@@ -10,6 +10,8 @@ jobs:
     steps: 
       - name: Step 1 Checkout Code
         uses: actions/checkout@v4
-#      - name: Generate File
-#        run: echo "Jeerawat" >> /home/jeerawat/testgit.txt
+      - name: Check Cursor
+        run: pwd
+      - name: Step 2 Copy To Deploy
+        run: cp -a . /var/www/html
     
