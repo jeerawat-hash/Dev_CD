@@ -8,6 +8,8 @@ jobs:
   create_file_on_host:
     runs-on: self-hosted
     steps: 
-      - name: Generate File
-        run: echo "Jeerawat" >> /home/jeerawat/testgit.txt
+      - name: Step 1 Checkout Code
+        uses: actions/checkout@v4
+#      - name: Generate File
+#        run: echo "Jeerawat" >> /home/jeerawat/testgit.txt
     
